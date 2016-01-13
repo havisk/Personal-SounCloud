@@ -1,6 +1,13 @@
 ## Welcome to My Project
 
-> I am your Readme.md file, you should probably update me.
+- My own personal soundcloud
+
+
+### Tech Used
+ - Angular
+ - Angular Router
+ - SASS
+ - SoundCloud API
 
 
 ## Usage
