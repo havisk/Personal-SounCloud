@@ -1,4 +1,6 @@
-let config = function($stateProvider){
+let config = function($stateProvider, $urlRouterProvider){
+
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('root', {
@@ -16,6 +18,6 @@ let config = function($stateProvider){
 
 };
 
-config.$inject = ['$stateProvider'];
+config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 export default config;

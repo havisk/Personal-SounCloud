@@ -4,7 +4,9 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var config = function config($stateProvider) {
+var config = function config($stateProvider, $urlRouterProvider) {
+
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider.state('root', {
     abstract: true,
@@ -17,7 +19,7 @@ var config = function config($stateProvider) {
   });
 };
 
-config.$inject = ['$stateProvider'];
+config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 exports['default'] = config;
 module.exports = exports['default'];
